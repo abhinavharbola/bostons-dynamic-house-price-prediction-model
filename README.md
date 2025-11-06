@@ -1,7 +1,7 @@
 # bostonHD - Boston House Price Dynamics
 
 **bostonHD** is a sleek, two-page Streamlit web app that predicts **Boston house prices** using a **Random Forest Regressor**.  
-It features an interactive interface for real-time predictions and a SHAP-based explanation page for model interpretability and better explainablity.
+It features an interactive interface for real-time predictions and a SHAP-based explanation page for better model interpretability and explainablity.
 
 ---
 
@@ -153,4 +153,5 @@ boston-house-price-predictor/
 
 
 **Author:** [Abhinav Harbola](https://github.com/abhinavharbola)
+
 
