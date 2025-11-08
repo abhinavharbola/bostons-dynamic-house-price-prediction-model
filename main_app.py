@@ -41,7 +41,7 @@ artifacts = load_artifacts()
 # Header
 # ----------------------------
 st.markdown("""
-    <h1 style='text-align:center; color:#6C63FF;'>🏡 Boston House Price Dynamics</h1>
+    <h1 style='text-align:center; color:#6C63FF;'>Boston House Price Dynamics</h1>
     <p style='text-align:center; color:gray;'>Predict the median value of homes using a Random Forest Regressor</p>
     <hr style='border:1px solid #eee;'>
 """, unsafe_allow_html=True)
@@ -49,7 +49,7 @@ st.markdown("""
 # ----------------------------
 # Sidebar (User Input)
 # ----------------------------
-st.sidebar.header("⚙️ Specify Input Parameters")
+st.sidebar.header("Specify Input Parameters")
 
 # Tooltips for features (manually maintained)
 feature_info = {
@@ -107,11 +107,8 @@ if model and artifacts:
     # Main Page (Prediction)
     # ----------------------------
     st.subheader("Specified Input Parameters")
-    
-    # --- THIS IS THE FIX ---
-    # Replaced 'use_container_width=True' with 'width="stretch"'
+
     st.dataframe(df, width="stretch")
-    # -----------------------
 
     prediction = model.predict(df)[0]
 
@@ -136,4 +133,5 @@ if model and artifacts:
     with st.expander("Show Model Performance (from test set)"):
         st.json(artifacts['evaluation_metrics'])
 else:
+
     st.warning("Model and/or artifacts not loaded. Please run `python train.py` to generate them.")
