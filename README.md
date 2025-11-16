@@ -7,13 +7,13 @@ It features an interactive interface for real-time predictions and a SHAP-based 
 
 ## Features
 
-- **Interactive UI** — Adjust housing parameters with sliders and tooltips.  
-- **Production-Ready Architecture** — Decoupled *training* (`train.py`) and *inference* (`home.py`) pipelines.  
-- **Explainable AI (XAI)** — SHAP visualizations for model interpretability.  
-- **Proper Validation** — Reports *MAE* and *R²* on the test set.  
-- **Clean Separation** — Offline model training, online inference.  
-- **Ethical Dataset** — The racially biased “B” feature has been removed.  
-- **No Data Leakage** — UI ranges are generated from training set statistics only.  
+- **Interactive UI** - Adjust housing parameters with sliders and tooltips.  
+- **Production-Ready Architecture** - Decoupled *training* (`train.py`) and *inference* (`home.py`) pipelines.  
+- **Explainable AI (XAI)** - SHAP visualizations for model interpretability.  
+- **Proper Validation** - Reports *MAE* and *R²* on the test set.  
+- **Clean Separation** - Offline model training, online inference.  
+- **Ethical Dataset** - The racially biased “B” feature has been removed.  
+- **No Data Leakage** - UI ranges are generated from training set statistics only.  
 
 ---
 
@@ -153,5 +153,3 @@ boston-house-price-predictor/
 
 
 **Author:** [Abhinav Harbola](https://github.com/abhinavharbola)
-
-
